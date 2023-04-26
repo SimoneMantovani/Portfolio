@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <script src="RockPaperScissor.js"></script>
+</head>
+<body style="background-image: url(white-stripe.jpg); text-align: center; margin-left: 30%; margin-right: 30%; ">
+    <h1 style="margin-bottom:80px ;">Rock, paper or scissor?</h1>
+    A classic game for two people. You have to choose between rock, paper or scissors. The rock crushes the scissors, the scissors cut the paper and the paper covers the rock. See who wins each round and beat the CPU!
+    <h3 style="margin-top: 80px;">Make your choice by clicking on it</h3>
+    <div class="playerChoice" style="margin-bottom: 80px;">
+        <img src="..\rock.png" size="200px" height="200px" alt="error" onclick="choice(1)">
+        <img src="..\paper.png" size="200px" height="200px" alt="error" onclick="choice(2)">
+        <img src="..\scissor.png" size="200px" height="200px" alt="error" onclick="choice(3)">
+    </div>
+    <div id="result" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px;"></div>
+    <div id="counter" style="display: flex; justify-content: space-between; align-items: center;" ><b>player score:   </b><span id="playerCounter"></span> <b>  CPU score:   </b><span id="CPUCounter"></span></div>
+</body>
+</html>
